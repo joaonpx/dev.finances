@@ -1,22 +1,35 @@
 function changeMode() {
-    if (document.getElementById("mode-icon").src == "https://cdn.glitch.com/489ae440-1e02-481f-a75b-c62aad2a6f00%2Fsun.svg?1611096791357") 
+    // Alterando os icones entre sol e lua
+    if (document.getElementById("mode-icon").src == "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Fsun-dark.svg?1611350845257") 
     {
-        document.getElementById("mode-icon").src = "https://cdn.glitch.com/489ae440-1e02-481f-a75b-c62aad2a6f00%2Fmoon.svg?1611096843012";
+        document.getElementById("mode-icon").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Fmoon.svg?1611351255616";
     }
     else 
     {
-        document.getElementById("mode-icon").src = "https://cdn.glitch.com/489ae440-1e02-481f-a75b-c62aad2a6f00%2Fsun.svg?1611096791357";
+        document.getElementById("mode-icon").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Fsun-dark.svg?1611350845257";
+    }
+    
+    // Alterando o icone do cifrão
+    if (document.getElementById("total-icon").src == "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Ftotal-dark.svg?1611350449239") 
+
+    {
+        document.getElementById("total-icon").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Ftotal.svg?1611350481084";
+    }
+    else 
+    {
+        document.getElementById("total-icon").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Ftotal-dark.svg?1611350449239";
     }
 
-    // if (document.getElementById("total-icon").src == "") 
-    // {
-    //     document.getElementById("total-icon").src = "";
-    // }
-    // else 
-    // {
-    //     document.getElementById("total-icon").src = "";
-    // }
+    // Alterando a logo
+    if (document.getElementById("logo").src == "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Flogo-dark.svg?1611350412538") 
 
+    {
+        document.getElementById("logo").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Flogo.svg?1611351006404";
+    }
+    else 
+    {
+        document.getElementById("logo").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Flogo-dark.svg?1611350412538";
+    }
 
     // Alterando o modo dos principais elementos
     let body = document.body;
