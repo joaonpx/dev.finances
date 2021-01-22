@@ -16,14 +16,17 @@
   </head>
   <body>
     <header>
-      <img id="logo" src="./assets/logo.svg" alt="Logo dev.finance$">
+      <div id="header-content">
+        <img id="logo" src="./assets/logo.svg" alt="Logo dev.finance$"> 
+        <span><a href="#" onclick="changeMode()" title="Change Mode"><img id="mode-icon" src="./assets/moon.svg" alt="Change Mode"></a></span>
+      </div>
     </header>
 
     <main class="container">
         <section id="balance">
             <h2 class="sr-only">Balanço</h2>
 
-            <div class="card">
+            <div class="card card-dark-1">
                 <h3>
                   <span>Entradas</span>
                   <img src="./assets/income.svg" alt="Imagem de entradas">
@@ -31,7 +34,7 @@
                 <p>R$ 5.000,00</p>
             </div>
 
-            <div class="card">
+            <div class="card card-dark-2">
                 <h3>
                   <span>Saída</span>
                   <img src="./assets/expense.svg" alt="Imagem de saídas">
@@ -42,7 +45,7 @@
             <div class="card total">
                 <h3>
                   <span>Total</span>
-                  <img src="./assets/total.svg" alt="Imagem do total">
+                  <img id="total-icon" src="./assets/total.svg" alt="Imagem do total">
                 </h3>
                 <p>R$ 3.000,00</p>
             </div>
@@ -58,34 +61,34 @@
             <table id="data-table">
               <thead>
                 <tr>
-                  <th>Descrição</th>
-                  <th>Valor</th>
-                  <th>Data</th>
-                  <th></th>
+                  <th class="th-dark-1">Descrição</th>
+                  <th class="th-dark-2">Valor</th>
+                  <th class="th-dark-3">Data</th>
+                  <th class="th-dark-4"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="description">Luz</td>
-                  <td class="expense">- R$ 500,00</td>
-                  <td class="date">23/01/2021</td>
-                  <td>
+                  <td class="description description-dark-1 td-dark-1">Luz</td>
+                  <td class="expense td-dark-2">- R$ 500,00</td>
+                  <td class="date td-dark-3">23/01/2021</td>
+                  <td class="td-dark-4">
                     <img src="./assets/minus.svg" alt="Remover transação">
                   </td>
                 </tr>
                 <tr>
-                  <td class="description">Criação de website</td>
-                  <td class="income">R$ 5.000,00</td>
-                  <td class="date">23/01/2021</td>
-                  <td>
+                  <td class="description description-dark-2 td-dark-5">Criação de website</td>
+                  <td class="income td-dark-6">R$ 5.000,00</td>
+                  <td class="date td-dark-7">23/01/2021</td>
+                  <td class="td-dark-8">
                     <img src="./assets/minus.svg" alt="Remover transação">
                   </td>
                 </tr>
                 <tr>
-                  <td class="description">Internet</td>
-                  <td class="expense">- R$ 200,00</td>
-                  <td class="date">23/01/2021</td>
-                  <td>
+                  <td class="description description-dark-3 td-dark-9">Internet</td>
+                  <td class="expense td-dark-10">- R$ 200,00</td>
+                  <td class="date td-dark-11">23/01/2021</td>
+                  <td class="td-dark-12">
                     <img src="./assets/minus.svg" alt="Remover transação">
                   </td>
                 </tr>
@@ -97,7 +100,7 @@
     <div class="modal-overlay">
       <div class="modal">
           <div id="form">
-            <h2>Nova Transação</h2>
+            <h2 class="h2-dark">Nova Transação</h2>
             <form action="">
               <div class="input-group">
                 <label 
@@ -147,27 +150,11 @@
       </div>
     </div>
 
-    <footer>
+    <footer class="footer-dark">
       <p>2021 - dev.finance$</p>
     </footer>
 
-    <script>
-      const Modal = {
-        open(){
-          // Abrir Modal
-          // Adicionar a class active ao Modal
-          document
-            .querySelector(".modal-overlay")
-            .classList.add("active")
-        },
-        close(){
-          // Fechar Modal
-          // Remover a class active do Modal
-          document
-            .querySelector(".modal-overlay")
-            .classList.remove("active")
-        }
-      }
-    </script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/changeMode.js"></script>
   </body>
 </html>

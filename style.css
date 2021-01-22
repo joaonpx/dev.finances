@@ -38,7 +38,6 @@ body {
     margin: auto;
 }
 
-
 /* Titles =============================================== */
 h2 {
     margin-top: 3.2rem;
@@ -111,12 +110,26 @@ button:hover {
 header {
     background: #2d4a22;
     padding: 2rem 0 10rem;
-
-    text-align: center;
 }
 
-#logo {
-    margin-bottom: 2rem;
+#header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 3rem 0 3rem;
+}
+
+#mode-icon {
+    width: 40px;
+
+    opacity: 0.7;
+
+    transition: .2s;
+}
+
+#mode-icon:hover {
+    opacity: 1;
 }
 
 /* Balance =============================================== */
@@ -156,7 +169,7 @@ header {
     margin-top: 1rem;
 }
 
-.card.total {
+.total {
     background: var(--green);
     color: #fff;
 }
@@ -205,7 +218,7 @@ table td {
     padding: 1rem 2rem;
 }
 
-td.description {
+.description {
     color: var(--dark-blue);
 }
 
@@ -245,8 +258,6 @@ td.expense{
 .modal {
     background: #f0f2f5;
     padding: 2.4rem;
-    /* width: 90%;
-    max-width: 500px; */
 
     position: relative;
     z-index: 1;
@@ -299,7 +310,7 @@ footer {
 }
 
 /* Responsividade =============================================== */
-@media (min-width: 800px) {
+@media (min-width: 865px) {
     html {
         font-size: 87.5%;
     }
@@ -309,4 +320,53 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
+    #header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo {
+        margin-right: 40rem;
+    }
+}
+
+/* Dark Mode =============================================== */
+.body-dark-mode {
+    background: #131313;
+    color: #fff;
+}
+
+.h2-dark-mode {
+    color: #fff;
+}
+
+.footer-dark-mode {
+    color: #fff;
+}
+
+.card-dark-mode {
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.total-dark-mode {
+    color:  #1f1f1f;
+}
+
+.modal-dark-mode {
+    background: #1f1f1f;
+}
+
+.th-dark-mode {
+    background: #1f1f1f;
+    color:#fff;
+}
+
+.td-dark-mode {
+    background: #1f1f1f;
+    color:#fff;
+}
+
+.description-dark-mode {
+    color: #fff;
 }
