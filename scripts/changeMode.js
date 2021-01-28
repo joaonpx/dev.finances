@@ -1,12 +1,12 @@
 function changeMode() {
     // Alterando os icones entre sol e lua
-    if (document.getElementById("mode-icon").src == "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Fsun-dark.svg?1611350845257") 
+    if (document.getElementById("mode-icon").src == "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Fsun.svg?1611847899930") 
     {
-        document.getElementById("mode-icon").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Fmoon.svg?1611351255616";
+        document.getElementById("mode-icon").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Fmoon-dark.svg?1611351255616";
     }
     else 
     {
-        document.getElementById("mode-icon").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Fsun-dark.svg?1611350845257";
+        document.getElementById("mode-icon").src = "https://cdn.glitch.com/f256daa3-8162-4d37-8d8c-ac5adc976de0%2Fsun.svg?1611847899930";
     }
     
     // Alterando o icone do cifrão
@@ -34,6 +34,8 @@ function changeMode() {
     // Alterando o modo dos principais elementos
     let body = document.body;
     body.classList.toggle("body-dark-mode");
+    let header = document.querySelector(".header-container")
+    header.classList.toggle("header-dark-mode")
     let h2 = document.querySelector(".h2-dark")
     h2.classList.toggle("h2-dark-mode");
     let footer = document.querySelector(".footer-dark")

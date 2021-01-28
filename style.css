@@ -19,6 +19,7 @@ html {
 body {
     background: #f0f2f5;
     font-family: 'Poppins', sans-serif;
+    transition: .2s;
 }
 
 .sr-only {
@@ -45,6 +46,7 @@ h2 {
     color: var(--dark-blue);
 
     font-weight: normal;
+    transition: .2s;
 }
 
 /* Links & Buttons =============================================== */
@@ -110,6 +112,7 @@ button:hover {
 header {
     background: #2d4a22;
     padding: 2rem 0 10rem;
+    transition: .2s;
 }
 
 #header-content {
@@ -118,6 +121,7 @@ header {
     justify-content: space-between;
 
     margin: 0 3rem 0 3rem;
+    transition: .2s;
 }
 
 #mode-icon {
@@ -151,6 +155,7 @@ header {
     margin-bottom: 2rem;
 
     color: var(--dark-blue);
+    transition: .2s;
 }
 
 .card h3 {
@@ -172,6 +177,11 @@ header {
 .total {
     background: var(--green);
     color: #fff;
+    transition: .2s;
+}
+
+.total-icon {
+    transition: .2s;
 }
 
 /* Table =============================================== */
@@ -203,6 +213,7 @@ table thead th {
     padding: 1rem 2rem;
 
     text-align: left;
+    transition: .2s;
 }
 
 table tbody tr {
@@ -216,10 +227,12 @@ table tbody tr:hover {
 table td {
     background: #fff;
     padding: 1rem 2rem;
+    transition: .2s;
 }
 
 .description {
     color: var(--dark-blue);
+    transition: .2s;
 }
 
 td.income{
@@ -261,6 +274,7 @@ td.expense{
 
     position: relative;
     z-index: 1;
+    transition: .2s;
 }
 
 /* Form =============================================== */
@@ -307,6 +321,7 @@ footer {
     color: var(--dark-blue);
 
     opacity: 0.6;
+    transition: .2s;
 }
 
 /* Responsividade =============================================== */
@@ -334,6 +349,11 @@ footer {
 .body-dark-mode {
     background: #131313;
     color: #fff;
+}
+
+.header-dark-mode {
+    background: rgb(44, 44, 44);
+    padding: 2rem 0 10rem;
 }
 
 .h2-dark-mode {
