@@ -7,6 +7,7 @@
 **dev.finances** é um projeto que está sendo desenvolvido durante a **[Maratona Discover](https://maratonadiscover.rocketseat.com.br/inscricao)#1**, realizada pela **[@Rocketseat](https://github.com/Rocketseat)**.
 
 O objetivo do projeto é auxiliar o controle financeiro.
+
 ## 🔖 Projeto
 
 Você pode visualizar o projeto em funcionamento através do link abaixo:
