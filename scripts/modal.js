@@ -1,8 +1,8 @@
 const Utils = {
   formatAmount(value) {
-    value = Number(value.replace(/\,\./g, "")) * 100
+    value = value * 100
 
-    return value
+    return Math.round(value)
   },
 
   formatDate(date) {
@@ -57,28 +57,6 @@ const Storage = {
 
 const Transaction = {
   all: Storage.get(),
-  // [
-  //   {
-  //     description: "Luz",
-  //     amount: -50000,
-  //     date: "23/01/2021"
-  //   },
-  //   {
-  //     description: "Criação de website",
-  //     amount: 500000,
-  //     date: "23/01/2021"
-  //   },
-  //   {
-  //     description: "Internet",
-  //     amount: -20000,
-  //     date: "23/01/2021"
-  //   },
-  //   {
-  //     description: "Criação de App",
-  //     amount: 200000,
-  //     date: "25/01/2021"
-  //   }
-  // ],
 
   add(transaction) {
     Transaction.all.push(transaction)
