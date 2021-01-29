@@ -20,7 +20,7 @@
     <header class="header-container">
       <div id="header-content">
         <img id="logo" src="./assets/logo.svg" alt="Logo dev.finance$"> 
-        <span><a href="#" onclick="changeMode()" title="Change Mode"><img id="mode-icon" src="./assets/moon-dark.svg" alt="Change Mode"></a></span>
+        <!-- <span><a href="#" onclick="changeMode()" title="Change Mode"><img id="mode-icon" src="./assets/moon-dark.svg" alt="Change Mode"></a></span> -->
       </div>
     </header>
 
@@ -33,15 +33,15 @@
                   <span>Entradas</span>
                   <img src="./assets/income.svg" alt="Imagem de entradas">
                 </h3>
-                <p>R$ 5.000,00</p>
+                <p id="incomeDisplay">R$ 0,00</p>
             </div>
 
             <div class="card card-dark-2">
                 <h3>
-                  <span>Saída</span>
+                  <span>Saídas</span>
                   <img src="./assets/expense.svg" alt="Imagem de saídas">
                 </h3>
-                <p>R$ 2.000,00</p>
+                <p id="expenseDisplay">R$ 0,00</p>
             </div>
 
             <div class="card total">
@@ -49,7 +49,7 @@
                   <span>Total</span>
                   <img id="total-icon" src="./assets/total.svg" alt="Imagem do total">
                 </h3>
-                <p>R$ 3.000,00</p>
+                <p id="totalDisplay">R$ 0,00</p>
             </div>
         </section>
 
@@ -70,30 +70,6 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td class="description description-dark-1 td-dark-1">Luz</td>
-                  <td class="expense td-dark-2">- R$ 500,00</td>
-                  <td class="date td-dark-3">23/01/2021</td>
-                  <td class="td-dark-4">
-                    <img src="./assets/minus.svg" alt="Remover transação">
-                  </td>
-                </tr>
-                <tr>
-                  <td class="description description-dark-2 td-dark-5">Criação de website</td>
-                  <td class="income td-dark-6">R$ 5.000,00</td>
-                  <td class="date td-dark-7">23/01/2021</td>
-                  <td class="td-dark-8">
-                    <img src="./assets/minus.svg" alt="Remover transação">
-                  </td>
-                </tr>
-                <tr>
-                  <td class="description description-dark-3 td-dark-9">Internet</td>
-                  <td class="expense td-dark-10">- R$ 200,00</td>
-                  <td class="date td-dark-11">23/01/2021</td>
-                  <td class="td-dark-12">
-                    <img src="./assets/minus.svg" alt="Remover transação">
-                  </td>
-                </tr>
               </tbody>
             </table>
         </section>
@@ -103,7 +79,7 @@
       <div class="modal">
           <div id="form">
             <h2 class="h2-dark">Nova Transação</h2>
-            <form action="">
+            <form action="" onsubmit="Form.submit(event)">
               <div class="input-group">
                 <label 
                 class="sr-only" 
