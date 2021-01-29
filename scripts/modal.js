@@ -198,7 +198,7 @@ const Form = {
       Form.clearFields();
 
       // modal feche
-      Modal.close();
+      Modal.toggle();
 
     } catch (error) {
       alert(error.message)
